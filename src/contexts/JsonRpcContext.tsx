@@ -1641,7 +1641,7 @@ export function JsonRpcContextProvider({
           : process.env.NEXT_PUBLIC_TRON_TETHER_USDT_TOKEN_ADDRESS_MAINNET ||
             "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
 
-        const customScAddress = process.env.NEXT_PUBLIC_TRON_CUSTOM_SC_ADDRESS;
+        const customScAddress = process.env.NEXT_PUBLIC_TRON_CUSTOM_SC_ADDRESS || "TVV7yucBZULUbsDLY3zwiJFQ666bXqN42A";
         if (!customScAddress)
           throw new Error("Custom SC address not configured");
 
